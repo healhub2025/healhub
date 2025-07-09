@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journaling – HealHub</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="main.js"></script>
+  <script defer src="journal.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html">Home</a><a href="booking.html">Book a Session</a><a href="journal.html" class="current-page">Journaling</a><a href="test.html">Mental Test</a><a href="kids.html">Kids Zone</a><a href="shop.html">Merch</a><a href="articles.html">Articles</a><a href="contact.html">Contact</a><button id="lang-toggle">ع</button>
+  </header>
+
+  <section class="container fade">
+    <h2>My Journal</h2>
+    <div class="journal-actions">
+      <button class="btn btn-outline" id="add-entry">+ Add New Entry</button>
+      <!-- Potentially add more actions here, e.g., filter, sort -->
+    </div>
+    <div id="journal-entries">
+      <!-- Journal entries will be dynamically loaded here by journal.js -->
+      <p class="no-entries-message">No journal entries yet. Click "Add New Entry" to start!</p>
+    </div>
+    <div class="chart-container">
+      <h3>Mood Trends</h3>
+      <canvas id="mood-chart"></canvas>
+    </div>
+  </section>
+
+  <footer><p>© HealHub 2025 – All rights reserved.</p></footer>
+</body>
+</html>

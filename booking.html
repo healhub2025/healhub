@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Session – HealHub</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html">Home</a><a href="booking.html" class="current-page">Book a Session</a><a href="journal.html">Journaling</a><a href="test.html">Mental Test</a><a href="kids.html">Kids Zone</a><a href="shop.html">Merch</a><a href="articles.html">Articles</a><a href="contact.html">Contact</a><button id="lang-toggle">ع</button>
+  </header>
+
+  <section class="container fade">
+    <div class="page-top-image-placeholder">
+      <img src="poster.png" alt="this is a poster for healhub." height="421" width="421">
+    </div>
+
+    <h2>Book a Therapy Session</h2>
+    <form id="booking-form">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required/>
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="e.g., example@email.com" required/>
+      </div>
+      <div class="form-group">
+        <label for="session-type">Session Type</label>
+        <select id="session-type">
+          <option value="online">Online</option>
+          <option value="offline">Offline</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="therapist-vibe">Therapist Vibe</label>
+        <select id="therapist-vibe">
+          <option value="religious">Religious</option>
+          <option value="casual">Casual</option>
+          <option value="funny">Funny</option>
+          <option value="professional">Professional</option>
+          <option value="calm">Calm</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="notes">Additional notes (optional)</label>
+        <textarea id="notes" placeholder="Tell us more about what you're looking for, or any specific concerns..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit Booking</button>
+    </form>
+  </section>
+
+  <footer><p>© HealHub 2025 – All rights reserved.</p></footer>
+</body>
+</html>
